@@ -68,7 +68,238 @@
   }
 }
 
-/* Modern Glass Card */
+/* Modern Ticker Bar - Barra de Cotações Animada */
+.ticker-container {
+  background: linear-gradient(135deg, #1a1b1f 0%, #0f0f10 100%);
+  border-top: 1px solid rgba(213, 250, 33, 0.2);
+  border-bottom: 1px solid rgba(213, 250, 33, 0.2);
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticker-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a1b1f 0%, #0f0f10 100%);
+  z-index: -1;
+}
+
+.ticker-wrapper {
+  display: flex;
+  animation: ticker-move 45s linear infinite;
+  gap: 0px;
+  width: max-content;
+  will-change: transform;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+}
+
+.ticker-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  min-width: 180px;
+}
+
+.ticker-value {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.ticker-label {
+  color: #e0e0e0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.ticker-separator {
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 20px;
+  opacity: 0.6;
+}
+
+@keyframes ticker-move {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Modern Hero Section */
+.hero-modern {
+  background: linear-gradient(135deg, #0f0f10 0%, #1a1b1f 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 60px;
+}
+
+.hero-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(213, 250, 33, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.hero-cta {
+  background: var(--gradient-primary);
+  color: var(--musg);
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 12px rgba(213, 250, 33, 0.3);
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(213, 250, 33, 0.4);
+  background: linear-gradient(135deg, #b8e619 0%, #a6d517 100%);
+}
+
+/* Responsive adjustments for hero and ticker */
+@media (max-width: 991px) {
+  .hero-modern {
+    padding: 60px 0 40px;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .ticker-container {
+    padding: 15px 0;
+  }
+  
+  .ticker-item {
+    min-width: 140px;
+    gap: 3px;
+  }
+  
+  .ticker-value {
+    font-size: 20px;
+  }
+  
+  .ticker-label {
+    font-size: 11px;
+  }
+  
+  .ticker-separator {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero-modern {
+    padding: 40px 0 30px;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .hero-cta {
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+  
+  .ticker-item {
+    min-width: 120px;
+    gap: 2px;
+  }
+  
+  .ticker-value {
+    font-size: 18px;
+  }
+  
+  .ticker-label {
+    font-size: 10px;
+  }
+  
+  .ticker-separator {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+}
+
+/* Smooth transition from header to next section */
+.about {
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding-top: 80px;
+}
+
+/* Garantir que nenhuma seção sobreponha o ticker */
+section:not(.ticker-container) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Correção específica para elementos que podem sobrepor */
+.w-layout-blockcontainer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Glass Card */
 .glass-card {
   background: var(--gradient-glass);
   backdrop-filter: blur(12px);
