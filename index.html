@@ -36,6 +36,17 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
+  <!-- Enhanced Page Loader -->
+  <div class="page-loader">
+    <div class="loader-content">
+      <img src="images/logo.png" alt="ISEVEN Logo" class="loader-logo">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Carregando</div>
+      <div class="loader-progress">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
   <div class="nav">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container w-nav">
       <div class="container-regular">
@@ -70,17 +81,120 @@
       </div>
     </div>
   </div>
-  <section class="header hero-modern">
-    <div class="w-layout-blockcontainer cont50 alt w-container hero-content">
-      <h1 class="hero-title">12 anos de experiência em Mercados Financeiros</h1>
-      <p class="hero-description">A ISEVEN combina anos de know-how em gerenciamento de corretoras Forex, Prop. Firms e um banco europeu para lhe fornecer uma experiência de negociação excepcional. Nossa sólida reputação e compromisso com a transparência garantem que você fique à frente do jogo.</p>
-      <p class="hero-description">Junte-se a nós e aproveite as melhores oportunidades de mercado com a segurança que você merece!</p>
-      <a href="/register" class="hero-cta">
-        Comece agora
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <section class="hero-ultra-modern">
+    <!-- Background Elements -->
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-grid-bg"></div>
+    
+    <div class="w-layout-blockcontainer hero-container w-container">
+      <!-- Trust Badge -->
+      <div class="hero-trust-badge">
+        <div class="trust-avatars">
+          <img src="images/p1.png" alt="Avatar usuário" class="trust-avatar">
+          <img src="images/p2.png" alt="Avatar usuário" class="trust-avatar">
+          <img src="images/p3.png" alt="Avatar usuário" class="trust-avatar">
+          <img src="images/p4.png" alt="Avatar usuário" class="trust-avatar">
+          <div class="trust-avatar-more">+</div>
+        </div>
+                 <span class="trust-text">
+           <strong>0</strong> usuários confiam em nós
+         </span>
+      </div>
+
+      <!-- Main Hero Content -->
+      <div class="hero-main-content">
+        <h1 class="hero-mega-title">
+          Negociação simples e segura,<br>
+          sob seu <span class="hero-highlight">controle</span>
+        </h1>
+        
+        <p class="hero-mega-description">
+          A ISEVEN fornece uma demonstração com <strong>$10.000</strong> em saldo fictício, para você explorar um novo mercado sem riscos reais
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="/register" class="hero-primary-btn">
+            <span>Explorar a plataforma</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/demo" class="hero-secondary-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+            <span>Assistir demonstração</span>
+          </a>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="hero-trust-indicators">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span>Suporte 24h por dia</span>
+          </div>
+          <div class="trust-separator">•</div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <span>Conta demo com 10 mil liberada</span>
+          </div>
+          <div class="trust-separator">•</div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <span>Suporte 24h por dia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trading Platform Preview -->
+      <div class="hero-platform-preview">
+        <div class="platform-mockup">
+          <img src="images/banner-top-site.jpg" alt="Plataforma de trading ISEVEN" class="platform-image">
+          <div class="platform-overlay">
+            <div class="platform-profit-card">
+              <div class="profit-icon">📈</div>
+              <div class="profit-content">
+                <div class="profit-label">Lucro do dia</div>
+                <div class="profit-value">+$2.847,32</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="hero-floating-elements">
+      <div class="floating-coin floating-coin-1">₿</div>
+      <div class="floating-coin floating-coin-2">€</div>
+      <div class="floating-coin floating-coin-3">$</div>
+      <div class="floating-coin floating-coin-4">£</div>
+    </div>
+
+    <!-- Modern Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-text">Role para descobrir mais</div>
+      <div class="scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      </a>
+      </div>
     </div>
   </section>
   <section class="ticker-container">
@@ -108,27 +222,27 @@
       <div class="ticker-item">
         <span class="ticker-value">211MUSD</span>
         <span class="ticker-label">Volume de negócios mensal</span>
-      </div>
+        </div>
       <div class="ticker-separator">•</div>
       <div class="ticker-item">
         <span class="ticker-value">200</span>
         <span class="ticker-label">Países</span>
-      </div>
+        </div>
       <div class="ticker-separator">•</div>
       <div class="ticker-item">
         <span class="ticker-value">88 milhões</span>
         <span class="ticker-label">Contas de negociação</span>
-      </div>
+        </div>
       <div class="ticker-separator">•</div>
       <div class="ticker-item">
         <span class="ticker-value">30MUSD</span>
         <span class="ticker-label">Transações mensais</span>
-      </div>
+        </div>
       <div class="ticker-separator">•</div>
       <div class="ticker-item">
         <span class="ticker-value">16MUSD</span>
         <span class="ticker-label">Pagamentos mensais médios</span>
-      </div>
+        </div>
       <div class="ticker-separator">•</div>
       <div class="ticker-item">
         <span class="ticker-value">211MUSD</span>
@@ -136,53 +250,75 @@
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about modern-section">
     <div class="w-layout-blockcontainer cont w-container">
-      <div class="tag">Plataforma de negociação</div>
-      <h2 class="h1 limit">Eleve sua experiência denegociação com nossaplataforma de última geração!</h2>
-      <p class="paragraph">Nossa plataforma de negociação de ponta foi projetada para ser fácil de usar, rápida e segura, garantindo que você possa negociar com confiança.</p>
-      <p class="paragraph">Com anos de experiência em mercados financeiros, oferecemos a melhor ferramenta para traders.</p>
-      <div class="about-grid">
-        <div id="w-node-bf8da762-3bf2-b894-54c9-3192e8a8ccdc-ec629e0d" class="bg-card">
-          <div class="_18">Junte-se a nós hoje edesbloqueie seu potencial denegociação com as melhoresferramentas do mercado!</div>
-          <a href="/register" class="btn green2 w-button">Comece agora</a>
-        </div>
-        <div id="w-node-_9de26415-79f0-d26b-2863-ebb0e413d554-ec629e0d" class="bg-card g2">
-          <div class="cx-icon"><img src="images/i1.png" loading="lazy" alt="Ícone de interface amigável ao usuário" class="image">
-            <div class="_18">Interface amigável ao usuário</div>
+      <div class="section-header">
+        <div class="tag modern-badge">Plataforma de negociação</div>
+        <h2 class="section-title">Eleve sua experiência de negociação com nossa plataforma de última geração!</h2>
+        <p class="section-description">Nossa plataforma de negociação de ponta foi projetada para ser fácil de usar, rápida e segura, garantindo que você possa negociar com confiança.</p>
+        <p class="section-subdescription">Com anos de experiência em mercados financeiros, oferecemos a melhor ferramenta para traders.</p>
+      </div>
+      <div class="features-grid">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h3 class="cta-title">Junte-se a nós hoje e desbloqueie seu potencial de negociação com as melhores ferramentas do mercado!</h3>
+            <a href="/register" class="cta-button">
+              Comece agora
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
           </div>
-          <p class="paragraph">Navegue sem esforço, seja você iniciante ouespecialista.</p>
         </div>
-        <div id="w-node-ee56547f-0e94-2454-96ea-c6536a15ef1f-ec629e0d" class="bg-card g2">
-          <div class="cx-icon"><img src="images/i2.png" loading="lazy" alt="Ícone de análises e insights avançados" class="image">
-            <div class="_18">Interface amigável ao usuário</div>
+        
+        <div class="features-cards">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/i1.png" loading="lazy" alt="Ícone de interface amigável ao usuário">
+            </div>
+            <h4 class="feature-title">Interface amigável ao usuário</h4>
+            <p class="feature-description">Navegue sem esforço, seja você iniciante ou especialista.</p>
           </div>
-          <p class="paragraph">Acesse análises e insights poderosos para aprimorar sua estratégia.</p>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/i2.png" loading="lazy" alt="Ícone de análises e insights avançados">
         </div>
-        <div id="w-node-e92b4d5f-3b42-efec-81b6-fdee2bf55fc2-ec629e0d" class="bg-card g3">
-          <div class="cx-icon"><img src="images/i3.png" loading="lazy" alt="Ícone de segurança robusta e proteção" class="image">
-            <div class="_18">Segurança Robusta</div>
+            <h4 class="feature-title">Análises Avançadas</h4>
+            <p class="feature-description">Acesse análises e insights poderosos para aprimorar sua estratégia.</p>
           </div>
-          <p class="paragraph">Negocie com segurança e proteção de altonível para seus investimentos.</p>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/i3.png" loading="lazy" alt="Ícone de segurança robusta e proteção">
         </div>
-        <div id="w-node-a302e20f-2998-f903-5ff2-05b0aa742f0d-ec629e0d" class="bg-card g4">
-          <div class="cx-icon"><img src="images/i4.png" loading="lazy" alt="Ícone de ferramentas avançadas de trading" class="image">
-            <div class="_18">Ferramentas avançadas</div>
+            <h4 class="feature-title">Segurança Robusta</h4>
+            <p class="feature-description">Negocie com segurança e proteção de alto nível para seus investimentos.</p>
           </div>
-          <p class="paragraph">Aproveite as oportunidades comprocessamento rápido de pedidos.</p>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/i4.png" loading="lazy" alt="Ícone de ferramentas avançadas de trading">
+        </div>
+            <h4 class="feature-title">Ferramentas avançadas</h4>
+            <p class="feature-description">Aproveite as oportunidades com processamento rápido de pedidos.</p>
+          </div>
         </div>
       </div>
-      <div class="gplay inv">
+      
+      <div class="gplay inv original-theme">
         <div class="cx-img">
-          <h2 class="h2 limit">Baixe o aplicativo móvel para qualquer dispositivo</h2><img src="images/Link.png" loading="lazy" alt="Links para download do aplicativo na App Store e Google Play">
-                  </div><img src="images/MOCKUP1-1.png" loading="lazy" sizes="(max-width: 673px) 100vw, 673px" srcset="images/MOCKUP1-1-p-500.png 500w, images/MOCKUP1-1.png 673w" alt="Mockup do aplicativo móvel ISEVEN em smartphone" class="mockupfloat">
+          <h2 class="h2 limit">Baixe o aplicativo móvel para qualquer dispositivo</h2>
+          <img src="images/Link.png" loading="lazy" alt="Links para download do aplicativo na App Store e Google Play">
+        </div>
+        <img src="images/MOCKUP1-1.png" loading="lazy" sizes="(max-width: 673px) 100vw, 673px" srcset="images/MOCKUP1-1-p-500.png 500w, images/MOCKUP1-1.png 673w" alt="Mockup do aplicativo móvel ISEVEN em smartphone" class="mockupfloat">
       </div>
     </div>
   </section>
-  <section class="pg">
+  <section class="pg">     <div class="tag">Métodos de Pagamento</div>
+
     <div class="w-layout-blockcontainer cont double w-container">
       <div class="_50">
-        <div class="tag">Métodos de Pagamento</div>
         <h2 class="h2">Negociação perfeita com opções de financiamento seguras</h2>
         <p class="paragraph">Experimente qualidade de ponta, transações extremamente rápidas e segurançaincomparável com a EXNIE.</p>
         <div class="gpay">
@@ -207,12 +343,200 @@
             </div>
           </div>
         </div>
-      </div><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="Imagem decorativa de fundo para seção de métodos de pagamento" class="bgbroker">
+      </div><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" sizes="(max-width: 479px) 80vw, (max-width: 767px) 90vw, 600px" srcset="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg 500w, https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg 673w" alt="Mockup do aplicativo móvel ISEVEN mostrando métodos de pagamento seguros" class="bgbroker">
     </div>
     <div class="w-layout-blockcontainer cont w-container">
       <div class="grid-money"><img src="images/Background-7.png" loading="lazy" id="w-node-abdf1856-eaea-e813-95b8-b19a8e43dfe2-ec629e0d" alt="Imagem decorativa de moeda Euro"><img src="images/Background-1.png" loading="lazy" id="w-node-e684d4d7-7b3a-3e74-2877-d90097d40702-ec629e0d" alt="Imagem decorativa de moeda Dólar"><img src="images/Background.png" loading="lazy" id="w-node-_70a4d3b1-e4c4-3e6c-5504-aaf15530faec-ec629e0d" alt="Imagem decorativa de moeda Bitcoin"><img src="images/Background-3.png" loading="lazy" id="w-node-_8779b239-fd83-1e20-61e9-30df26eba164-ec629e0d" alt="Imagem decorativa de moeda Libra"><img src="images/Background-8.png" loading="lazy" id="w-node-_270cffbf-b6d3-58ca-51fe-04677b4610d3-ec629e0d" alt="Imagem decorativa de moeda Yen"><img src="images/Background-5.png" loading="lazy" id="w-node-_7efb7806-6af3-22ac-a3a7-314d202d1c98-ec629e0d" alt="Imagem decorativa de moeda Real"><img src="images/Background-6.png" loading="lazy" id="w-node-d17b57c9-af8c-fc32-a0f6-99e1243f32e6-ec629e0d" alt="Imagem decorativa de moeda Franco"><img src="images/Background-2.png" loading="lazy" id="w-node-_332764da-f642-fd18-e3a4-c0829a605df4-ec629e0d" alt="Imagem decorativa de moeda Ethereum"></div>
     </div>
   </section>
+  
+  <!-- Seção de Transição - Notificações de Lucro -->
+  <section class="profit-notifications">
+    <div class="notifications-container">
+      <!-- Fileira Superior - Move para Esquerda -->
+      <div class="notification-row row-left">
+        <!-- Set Original -->
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 2.450,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 8.720,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 15.340,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 45.890,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 67.120,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 91.750,00</div>
+          </div>
+        </div>
+        
+        <!-- Set Duplicado para Loop Infinito -->
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 2.450,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 8.720,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 15.340,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 45.890,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 67.120,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 91.750,00</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fileira Inferior - Move para Direita -->
+      <div class="notification-row row-right">
+        <!-- Set Original -->
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 3.680,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 12.450,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 28.790,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 54.320,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 73.650,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 98.420,00</div>
+          </div>
+        </div>
+        
+        <!-- Set Duplicado para Loop Infinito -->
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 3.680,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 12.450,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 28.790,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 54.320,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 73.650,00</div>
+          </div>
+        </div>
+        <div class="notification-card">
+          <div class="notification-icon"><img src="images/favicon.png" alt="ISEVEN"></div>
+          <div class="notification-content">
+            <div class="notification-title">Lucro Obtido!</div>
+            <div class="notification-value">Valor: R$ 98.420,00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="active">
     <div class="w-layout-blockcontainer cont gapmax w-container">
       <h2 class="h2 limit">Negociação perfeita com opções de financiamento seguras</h2>
@@ -233,16 +557,244 @@
         </div>
         <div class="w-tab-content">
           <div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane w--tab-active">
-            <div class="div-block"><img src="images/Background_1.png" loading="lazy" alt="Par de moedas EUR/USD para trading Forex" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Par de moedas GBP/USD para trading Forex" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Par de moedas USD/JPY para trading Forex" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Par de moedas AUD/USD para trading Forex" class="img-active"></div>
+            <div class="trading-cards-grid">
+              <div class="trading-card">
+                <div class="trading-pair">🇪🇺🇺🇸 EUR/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,20 Q20,15 35,18 T65,12" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">1.0847</div>
+                <div class="trading-change negative">-0.23%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🇬🇧🇺🇸 GBP/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,25 Q20,20 35,22 T65,8" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">1.2654</div>
+                <div class="trading-change positive">+0.45%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🇺🇸🇯🇵 USD/JPY</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,15 Q20,18 35,16 T65,20" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">149.32</div>
+                <div class="trading-change negative">-0.11%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🇦🇺🇺🇸 AUD/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,22 Q20,10 35,12 T65,6" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">0.6721</div>
+                <div class="trading-change positive">+0.78%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+            </div>
           </div>
           <div data-w-tab="Tab 2" class="w-tab-pane">
-            <div class="div-block"><img src="images/Background_1.png" loading="lazy" alt="Ação da Apple (AAPL) para trading" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Ação da Microsoft (MSFT) para trading" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Ação da Tesla (TSLA) para trading" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Ação da Amazon (AMZN) para trading" class="img-active"></div>
+            <div class="trading-cards-grid">
+              <div class="trading-card">
+                <div class="trading-pair">🍎 AAPL</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,25 Q20,12 35,15 T65,8" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$189.46</div>
+                <div class="trading-change positive">+1.23%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🪟 MSFT</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,20 Q20,22 35,18 T65,25" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$412.81</div>
+                <div class="trading-change negative">-0.67%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🚗 TSLA</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,18 Q20,8 35,10 T65,5" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$248.98</div>
+                <div class="trading-change positive">+2.15%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">📦 AMZN</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,15 Q20,20 35,17 T65,22" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$153.47</div>
+                <div class="trading-change negative">-0.89%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+            </div>
           </div>
           <div data-w-tab="Tab 3" class="w-tab-pane">
-            <div class="div-block"><img src="images/Background_1.png" loading="lazy" alt="Bitcoin (BTC) para trading de criptomoedas" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Ethereum (ETH) para trading de criptomoedas" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Litecoin (LTC) para trading de criptomoedas" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Ripple (XRP) para trading de criptomoedas" class="img-active"></div>
+            <div class="trading-cards-grid">
+              <div class="trading-card">
+                <div class="trading-pair">₿ BTC/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,22 Q20,8 35,12 T65,6" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$67,241</div>
+                <div class="trading-change positive">+3.42%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">⟠ ETH/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,20 Q20,15 35,18 T65,12" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$3,847</div>
+                <div class="trading-change positive">+2.18%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">Ł LTC/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,25 Q20,20 35,22 T65,18" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$94.68</div>
+                <div class="trading-change negative">-1.34%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">◎ XRP/USD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,18 Q20,25 35,20 T65,15" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$0.5892</div>
+                <div class="trading-change positive">+5.67%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+            </div>
           </div>
           <div data-w-tab="Tab 4" class="w-tab-pane">
-            <div class="div-block"><img src="images/Background_1.png" loading="lazy" alt="Ouro (GOLD) para trading de commodities" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Petróleo (OIL) para trading de commodities" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Prata (SILVER) para trading de commodities" class="img-active"><img src="images/Background_1.png" loading="lazy" alt="Gás Natural para trading de commodities" class="img-active"></div>
+            <div class="trading-cards-grid">
+              <div class="trading-card">
+                <div class="trading-pair">🥇 GOLD</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,15 Q20,18 35,16 T65,20" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$2,034.80</div>
+                <div class="trading-change negative">-0.45%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🛢️ OIL</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,25 Q20,12 35,15 T65,8" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$87.45</div>
+                <div class="trading-change positive">+1.89%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">🥈 SILVER</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,20 Q20,22 35,18 T65,25" stroke="#ef4444" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$24.67</div>
+                <div class="trading-change negative">-1.12%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+              <div class="trading-card">
+                <div class="trading-pair">⛽ GAS</div>
+                <div class="trading-chart">
+                  <svg width="80" height="30" viewBox="0 0 80 30">
+                    <path d="M5,22 Q20,10 35,12 T65,6" stroke="#10b981" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <div class="trading-price">$2.834</div>
+                <div class="trading-change positive">+3.21%</div>
+                <div class="trading-buttons">
+                  <button class="btn-buy">Comprar</button>
+                  <button class="btn-sell">Oferta</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -327,13 +879,13 @@
       <div class="footer-wrapper">
         <div>
           <a href="#" class="footer-brand w-inline-block"><img src="images/logo.png" loading="lazy" sizes="100px" srcset="images/logo-p-500.png 500w, images/logo-p-800.png 800w, images/logo-p-1080.png 1080w, images/logo-p-1600.png 1600w, images/logo-p-2000.png 2000w, images/logo-p-2600.png 2600w, images/logo-p-3200.png 3200w, images/logo.png 3620w" alt="ISEVEN - Logo da corretora no rodapé" class="brand-footer"></a>
-                      <div class="div-block-2">
+          <div class="div-block-2">
               <a id="w-node-_7cea0544-8f76-b10d-baed-b633ea9fd44b-ec629e0d" href="#" class="w-inline-block"><img src="images/Link-→-trustpilot.svg.png" loading="lazy" alt="Link para perfil da ISEVEN no Trustpilot"></a>
               <a id="w-node-a84f9a69-8080-9a10-97d5-55fd3b7e6ed3-ec629e0d" href="#" class="w-inline-block"><img src="images/Link-→-instagram.svg.png" loading="lazy" alt="Link para perfil da ISEVEN no Instagram"></a>
               <a id="w-node-_64dd7d96-9efa-492b-25af-b0958af18271-ec629e0d" href="#" class="w-inline-block"><img src="images/Link-→-facebook.svg.png" loading="lazy" alt="Link para perfil da ISEVEN no Facebook"></a>
               <a id="w-node-_046132c2-5890-3ae4-148c-27da672316ea-ec629e0d" href="#" class="w-inline-block"><img src="images/Link-→-youtube.svg.png" loading="lazy" alt="Link para canal da ISEVEN no YouTube"></a>
               <a id="w-node-_980629ce-dabf-9cca-6983-3c565c58f9fb-ec629e0d" href="#" class="w-inline-block"><img src="images/Link-→-x.svg.png" loading="lazy" alt="Link para perfil da ISEVEN no X (Twitter)"></a>
-            </div>
+          </div>
         </div>
         <div class="footer-content">
           <div id="w-node-cea00174-ebc1-0b63-57d7-2e0efd285ccb-ec629e0d" class="footer-block">
@@ -372,5 +924,6 @@
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=672c3ec34613974eec629e06" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/modern-animations.js" type="text/javascript"></script>
+  <script src="js/custom-cursor.js" type="text/javascript"></script>
 </body>
 </html>
