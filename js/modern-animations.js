@@ -1,4 +1,4 @@
-// Modern Animations for ISEVEN Site
+// Modern Animations for PEAKBROKER Site
 // Animações modernas para melhorar a experiência do usuário
 
 // ==========================================
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializar animações da seção de pagamentos
     setTimeout(initPaymentSectionAnimations, 500);
 
-    console.log('🚀 ISEVEN Modern Animations carregadas com sucesso!');
+    console.log('🚀 PEAKBROKER Modern Animations carregadas com sucesso!');
   }, 100);
 });
 
