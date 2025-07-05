@@ -2565,7 +2565,7 @@ section:not(.ticker-container) {
 
 .pg .bgbroker {
   width: 100% !important;
-  max-width: 350px !important;
+  max-width: 550px !important;
   height: auto !important;
   object-fit: contain;
   margin: 0 auto !important;
@@ -4317,7 +4317,6 @@ section:not(.ticker-container) {
 
   /* Força todas as imagens da seção pg ocuparem largura total */
   .pg img:not(.grid-money img) {
-    width: 20% !important;
     max-width: 100% !important;
     height: auto !important;
   }
@@ -4343,7 +4342,6 @@ section:not(.ticker-container) {
 
   /* Força imagens ocuparem largura total (exceto ícones dos pagamentos) */
   .pg img:not(.grid-money img):not(.cx-icon img) {
-    width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
   }
@@ -5053,6 +5051,12 @@ section:not(.ticker-container) {
 
   .trust-text {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
   }
 }
 
